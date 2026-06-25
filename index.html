@@ -51,7 +51,7 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
 .s-steel .h-section,.s-steel .h-display{color:#0e1114}
 .s-steel .lede{color:#3a4046}.s-steel em.r{background-image:linear-gradient(92deg,#a30d24,var(--red))}
 .s-steel .eyebrow{color:#a30d24}.s-steel .eyebrow::before{background:#a30d24}
-.s-steel::after{content:"";position:absolute;left:0;right:0;top:0;height:34%;background:linear-gradient(180deg,#0d0e10,#15171b);z-index:0}
+.s-steel::after{content:"";position:absolute;left:0;right:0;top:0;height:0%;background:linear-gradient(180deg,#0d0e10,#15171b);z-index:0}
 .s-steel>.wrap{position:relative;z-index:1}.s-steel .ondeck{color:#fff}
 .h-content{position:relative;z-index:2}
 .corner{position:absolute;top:30px;right:48px;z-index:3;font-family:"Archivo",sans-serif;font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:10px;color:var(--steel-dim)}
@@ -126,7 +126,7 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
   </div>
   <div class="wrap" style="position:relative;z-index:2;padding-bottom:22px">
     <span class="eyebrow"><span style="width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(200,16,46,.18);display:inline-block"></span>The Global Stage</span>
-    <h1 class="h-display" style="text-transform:uppercase;font-size:clamp(44px,7.4vw,108px);line-height:.92">From Naples<br>to the <em class="r">Red Sea</em></h1>
+    <h1 class="h-display" style="text-transform:uppercase;font-size:clamp(44px,7.4vw,108px);line-height:.92">From Napoli<br>to the <em class="r">Red Sea</em></h1>
     <div style="display:flex;gap:22px;margin-top:24px;max-width:640px">
       <div style="width:2px;background:linear-gradient(180deg,var(--red),transparent);flex:none"></div>
       <p class="lede">Alfa Romeo is <b>title sponsor of Luna Rossa</b> at the first America's Cup ever held in Italy. This is a tailored invitation to bring that <b>road-to-sea</b> story to the Gulf — a full season before Naples.</p>
@@ -156,16 +156,19 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
 </section>
 
 <!-- INTERSTITIAL A -->
-<section class="section interstitial" style="background-image:url('assets/sailing-hero-1.jpg')">
+ <section class="section interstitial" style="min-height:88vh;display:flex;flex-direction:column">
+  <video autoplay muted loop playsinline poster="assets/sailing-hero-1.jpg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0">
+    <source src="assets/fleet-hero.mp4#t=2" type="video/mp4">
+  </video>
   <div class="scrim"></div>
-  <div class="wrap h-content reveal" style="padding-bottom:48px">
+  <div class="wrap h-content reveal" style="position:relative;z-index:2;margin-top:auto;padding-bottom:8vh">
     <span class="eyebrow">El Gouna · Red Sea</span>
-    <h2 class="h-display" style="text-transform:uppercase;max-width:780px">Where the<br><em class="r">fleet comes alive.</em></h2>
+    <h2 class="h-display">Where the<br><em class="r">fleet comes alive.</em></h2>
   </div>
 </section>
 
 <!-- THE DECEMBER FLAGSHIP -->
-<section class="section s-carbon" id="flagship">
+<section class="section s-carbon" style="padding-top:160px" id="flagship">
   <div class="corner">The Flagship</div>
   <img src="assets/alfa-badge-black.svg" alt="" aria-hidden="true" style="position:absolute;right:-90px;top:50%;transform:translateY(-50%);width:min(46%,560px);height:auto;z-index:0;opacity:.05;filter:brightness(0) invert(1);pointer-events:none">
   <div class="wrap h-content reveal">
@@ -188,7 +191,7 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
   <div class="mini" style="margin-bottom:14px">And our own water · Red Sea Sails</div>
   <div class="statrow cols-2" style="margin-top:0">
     <div>
-      <div class="videoframe"><video controls muted playsinline poster="assets/somabay-poster.jpg"><source src="assets/somabay-1.mp4" type="video/mp4"></video></div>
+      <div class="videoframe"><video controls muted playsinline poster="assets/somabay-poster.jpg"><source src="assets/somabay-1.mp4#t=2" type="video/mp4"></video></div>
       <div class="cap">Soma Bay Sailing Festival · May 2026</div>
     </div>
     <div>
@@ -308,7 +311,7 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
     <span class="eyebrow">From the AC75 to El Gouna</span>
     <h2 class="h-display">The same livery,<br>on <em class="r">your water.</em></h2>
     <div class="rule"></div>
-    <p class="lede">This is the AC75 Alfa Romeo is backing in Naples. In El Gouna, we apply the same look and feel to our race yachts — <b>with dedicated AR logo placement on hull and sail.</b></p>
+    <p class="lede">This is the AC75 Alfa Romeo is backing in Naples. In El Gouna, inspired by the same look and feel, will apply to our race yachts — <b>with dedicated AR logo placement on hull and sail.</b></p>
     <div class="statrow cols-2" style="margin-top:34px;align-items:start">
       <div>
       <div class="videoframe"><video src="assets/ac75.mp4" controls muted playsinline></video></div>
@@ -356,7 +359,7 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
       <div class="cap">Alfa Romeo × Luna Rossa</div>
     </div>
   </div>
-      <div class="reveal" style="margin-top:40px">
+      <div class="reveal" style="margin-top:40px;text-align:center">
       <div class="mini" style="margin-bottom:14px">The car the language comes from</div>
       <div class="videoframe" style="max-width:880px;margin:0 auto"><iframe src="https://www.youtube.com/embed/I_syz8r07_Q?rel=0&modestbranding=1&controls=0" title="Giulia Quadrifoglio Luna Rossa" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
       <div style="font-size:12.5px;color:var(--txt-dim);margin-top:12px">Giulia Quadrifoglio Luna Rossa — 10 units worldwide · on track at Balocco</div>
@@ -385,19 +388,6 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
         <div class="cap">On the water · the fans</div>
       </div>
     </div>
-    <div style="margin-top:40px;padding-top:28px;border-top:1px solid var(--line)">
-      <div class="mini" style="margin-bottom:14px">And our own water · Red Sea Sails</div>
-      <div class="statrow cols-2" style="margin-top:0">
-        <div>
-          <div class="videoframe"><video controls muted playsinline poster="assets/somabay-poster.jpg"><source src="assets/somabay-1.mp4" type="video/mp4"></video></div>
-          <div class="cap">Soma Bay Sailing Festival · May 2026</div>
-        </div>
-        <div>
-          <div class="videoframe"><iframe src="https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F4040759756057537%2F&show_text=false&width=560&t=0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></div>
-          <div class="cap">Red Sea Sails · reel</div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -410,14 +400,47 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
     <div class="rule"></div>
     <p class="lede">A full, curated menu — branding, print, on-site, digital and vehicle. Examples we tailor to Alfa Romeo; swap in your own assets as we develop the plan.</p>
     <div class="statrow cols-3">
-      <div class="card"><div class="ph" style="height:120px;margin-bottom:16px"><span>[ image ]</span></div><h3>Hull &amp; sail wrap</h3><p>Your livery on a competing race yacht — the hero activation, on the water for four days.</p></div>
-      <div class="card"><div class="ph" style="height:120px;margin-bottom:16px"><span>[ image ]</span></div><h3>Vehicle display zone</h3><p>Premium showcase in the Regatta Village for your latest models.</p></div>
-      <div class="card"><div class="ph" style="height:120px;margin-bottom:16px"><span>[ image ]</span></div><h3>VIP transfer fleet</h3><p>Branded vehicles moving owners and VIP guests throughout the event.</p></div>
-      <div class="card"><div class="ph" style="height:120px;margin-bottom:16px"><span>[ image ]</span></div><h3>Branded lounge &amp; booth</h3><p>A hospitality space with your vehicles as the centrepiece.</p></div>
-      <div class="card"><div class="ph" style="height:120px;margin-bottom:16px"><span>[ image ]</span></div><h3>Print &amp; on-site branding</h3><p>Refined placement across event materials and venue dressing.</p></div>
-      <div class="card"><div class="ph" style="height:120px;margin-bottom:16px"><span>[ image ]</span></div><h3>Co-branded content</h3><p>Parallel stories of performance — captured for year-round digital use.</p></div>
-    </div>
+  <div>
+    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-hullwrap.jpg" alt="" onerror="this.remove()"></div>
+    <h3 style="font-size:17px">Hull &amp; sail wrap</h3>
+    <p>Your livery on a competing race yacht — the hero activation, on the water for four days.</p>
   </div>
+  <div>
+    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-vehicle.jpg" alt="" onerror="this.remove()"></div>
+    <h3 style="font-size:17px">Vehicle display zone</h3>
+    <p>Premium showcase in the Regatta Village for your latest models, front and centre.</p>
+  </div>
+  <div>
+    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-testdrive.jpg" alt="" onerror="this.remove()"></div>
+    <h3 style="font-size:17px">Test-drive experience</h3>
+    <p>Owners and VIP guests behind the wheel — a premium audience driving the car at the event.</p>
+  </div>
+  <div>
+    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-vipfleet.jpg" alt="" onerror="this.remove()"></div>
+    <h3 style="font-size:17px">VIP transfer fleet</h3>
+    <p>Branded vehicles moving guests between marina, gala and resort — rolling visibility all weekend.</p>
+  </div>
+  <div>
+    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-spectator.jpg" alt="" onerror="this.remove()"></div>
+    <h3 style="font-size:17px">VIP spectator yacht</h3>
+    <p>An Alfa Romeo–branded spectator yacht for up to 12 VIPs, on the water at the heart of the racing.</p>
+  </div>
+  <div>
+    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-lounge.jpg" alt="" onerror="this.remove()"></div>
+    <h3 style="font-size:17px">Branded lounge &amp; booth</h3>
+    <p>A hospitality space carrying the brand through the gala and the forum.</p>
+  </div>
+  <div>
+    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-print.jpg" alt="" onerror="this.remove()"></div>
+    <h3 style="font-size:17px">Print &amp; on-site branding</h3>
+    <p>Refined placement across signage, programme and the El Gouna waterfront.</p>
+  </div>
+  <div>
+    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-cobrand.jpg" alt="" onerror="this.remove()"></div>
+    <h3 style="font-size:17px">Co-branded content</h3>
+    <p>Parallel stories of performance — captured across the regatta and built for your channels.</p>
+  </div>
+</div>
 </section>
 
 <!-- THE PLATFORM -->
@@ -443,11 +466,11 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
   <div class="corner">Why It's Safe</div>
   <div class="wrap h-content reveal">
     <span class="eyebrow">Why It's Safe</span>
-    <h2 class="h-display">23 regattas. Zero failures.<br><em class="r">One team.</em></h2>
+    <h2 class="h-display">23 regattas. One<br>community<em class="r"> that keeps showing up.</em></h2>
     <div class="rule"></div>
-    <p class="lede">This isn't a first attempt. Red Sea Sails has self-funded and self-run 23 regattas since 2022, built the only operating sailing ecosystem on the Red Sea, and helped open Egypt's waters to international fleets. The platform exists. The audience exists. December is simply where Alfa steps onto it.</p>
+    <p class="lede">This isn't a first attempt. Red Sea Sails has self-funded and self-run 18 regattas since 2022, built the only operating sailing ecosystem on the Red Sea, and helped open Egypt's waters to international sailors. The platform exists. The audience exists. December is simply where Alfa steps onto it.</p>
     <div class="statrow cols-4">
-      <div class="card"><div class="kn">01</div><h3>Self-funded record</h3><p>23 regattas, no external backing required.</p></div>
+      <div class="card"><div class="kn">01</div><h3>Self-funded record</h3><p>18 regattas, no external backing required.</p></div>
       <div class="card"><div class="kn">02</div><h3>Established operator</h3><p>School, charter, events — a real business.</p></div>
       <div class="card"><div class="kn">03</div><h3>Open waters</h3><p>Egypt opened to foreign-flagged yachts, 2025.</p></div>
       <div class="card"><div class="kn">04</div><h3>Fleet in place</h3><p>International boats already on the start line.</p></div>
@@ -496,7 +519,7 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
     <p class="lede">Most sponsors buy an event. This is a position you hold as the category grows — and right now, it's uncontested.</p>
     <div class="statrow cols-3">
       <div class="card"><div class="num grad-r" style="font-size:42px">01</div><h3 style="margin-top:8px">Dec 2026 — The Pilot</h3><p>Red Sea Sailing Regatta Vol. 3. Hull livery, vehicle showcase, premium audience. Proof of concept, low risk.</p></div>
-      <div class="card"><div class="num grad" style="font-size:42px">02</div><h3 style="margin-top:8px">2027 — The Platform</h3><p>Year-round presence: winter series, Gouna festival, the Sail-to-Soma flotilla. European fleets wintering in El Gouna. Continuous content, not a one-off.</p></div>
+      <div class="card"><div class="num grad" style="font-size:42px">02</div><h3 style="margin-top:8px">Spring 2027 — The Build-Up</h3><p>The Soma Bay Festival, staged in spring as the America's Cup nears — a campaign Alfa builds across both events, mirroring the global excitement strategy that leads into Naples. Two activations, one rising arc.</p></div>
       <div class="card"><div class="num grad" style="font-size:42px">03</div><h3 style="margin-top:8px">Jul 2027 — The Tie-In</h3><p>A regional flagship running straight into Naples — Alfa's Gulf audience primed exactly as the America's Cup peaks.</p></div>
     </div>
   </div>
@@ -504,6 +527,7 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
 
 <section class="section s-steel" id="ask">
   <div class="corner ondeck">The Invitation</div>
+  <img src="assets/alfa-badge-black.svg" alt="" aria-hidden="true" style="position:absolute;right:-90px;top:50%;transform:translateY(-50%);width:min(46%,560px);height:auto;z-index:0;opacity:.05;filter:brightness(0) invert(0);pointer-events:none">
   <div class="wrap h-content reveal">
     <span class="eyebrow">The Invitation</span>
     <h2 class="h-section">One automotive partner. <em class="r">One window.</em></h2>
@@ -539,7 +563,8 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
 <!-- CLOSING -->
 <section class="section s-dark" id="close" style="text-align:center;min-height:80vh;display:flex;align-items:center">
   <div class="wrap h-content reveal">
-  <div style="display:flex;gap:16px;align-items:center;justify-content:center;margin-bottom:24px"><span style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:13px;color:#fff">Red Sea Sails</span><span style="color:var(--red-bright);font-size:16px">×</span><img src="assets/alfa-badge.png" alt="Alfa Romeo" style="height:40px;width:auto"></div>    <h2 class="h-display" style="text-transform:uppercase;font-size:clamp(40px,6vw,84px);line-height:.95">From Naples<br>to the <em class="r">Red Sea.</em></h2>
+  <img src="assets/alfa-badge.png" alt="Alfa Romeo" style="height:200px;width:auto"> 
+    <div style="display:flex;gap:16px;align-items:center;justify-content:center;margin-bottom:24px"><span style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:13px;color:#fff">Red Sea Sails</span><span style="color:var(--red-bright);font-size:16px">×</span><img src="assets/alfa-badge-black.svg" alt="Alfa Romeo" style="height:30px;width:auto;filter:brightness(0) invert(1)"></div> <h2 class="h-display" style="text-transform:uppercase;font-size:clamp(40px,6vw,84px);line-height:.95">From Naples<br>to the <em class="r">Red Sea.</em></h2>
     <p class="lede" style="margin:24px auto 0;max-width:560px">Red Sea Sailing Regatta Vol. 3 · 9–12 December 2026 · El Gouna, Egypt</p>
   </div>
 </section>
