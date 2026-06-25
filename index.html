@@ -86,6 +86,26 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
 @media (max-width:980px){.section{padding:72px 0}.wrap{padding:0 24px}.corner{right:24px}.nav-dots{display:none}.cols-3,.cols-4{grid-template-columns:1fr 1fr}.cols-2{grid-template-columns:1fr}.imgrow{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.cols-3,.cols-4,.imgrow{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+/* ── section separation: foil hairline between sections ── */
+.section{border-top:1px solid transparent;border-image:linear-gradient(90deg,transparent 6%,rgba(200,16,46,.45),rgba(205,210,216,.28),transparent 94%) 1}
+#cover,.interstitial{border-top:none;border-image:none}
+
+/* ── distribute carbon texture onto the flat dark sections ── */
+.s-dark::before{content:"";position:absolute;inset:0;z-index:0;opacity:5;pointer-events:none;
+  background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.015) 0 2px,transparent 2px 6px),repeating-linear-gradient(-45deg,rgba(0,0,0,.22) 0 2px,transparent 2px 6px);background-size:7px 7px}
+
+/* ── car cues as oversized faint decoration ── */
+/* foil line */
+#flagship::after,#ahead::after{content:"";position:absolute;right:-40px;bottom:-30px;width:620px;height:230px;z-index:0;pointer-events:none;opacity:.45;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 220'%3E%3Cpath d='M0 160 C200 160 380 70 600 70' fill='none' stroke='%23C8102E' stroke-width='3'/%3E%3Cpath d='M0 180 C200 180 380 92 600 92' fill='none' stroke='%23CDD2D8' stroke-width='2'/%3E%3C/svg%3E") no-repeat right bottom/contain}
+#ahead::after{right:auto;left:-40px;bottom:auto;top:-10px;transform:scaleY(-1)}
+/* red livery band */
+#activation::after{content:"";position:absolute;left:-5%;right:-5%;top:36%;height:130px;z-index:0;pointer-events:none;opacity:.07;
+  background:linear-gradient(-7deg,transparent 47%,var(--red) 47% 53%,transparent 53%)}
+/* red→black wheel ring bleeding off-edge */
+#digital::after{content:"";position:absolute;right:-130px;top:50%;transform:translateY(-50%);width:420px;height:420px;border-radius:50%;z-index:0;pointer-events:none;opacity:.1;
+  background:conic-gradient(from 220deg,var(--red),#5a1016 35%,transparent 60%,#2a2d33 80%,var(--red));
+  -webkit-mask:radial-gradient(circle 120px at 50% 50%,transparent 98%,#000 100%);mask:radial-gradient(circle 120px at 50% 50%,transparent 98%,#000 100%)}
 </style>
 </head>
 <body>
@@ -255,34 +275,11 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
       <div class="cap">Alfa Romeo × Luna Rossa</div>
     </div>
   </div>
-</section>
-
-<!-- DESIGN DNA -->
-<section class="section s-dark" id="dna">
-  <div class="corner">Design DNA</div>
-  <div class="wrap h-content reveal">
-    <span class="eyebrow">Design DNA</span>
-    <h2 class="h-display">Borrowed from the rarest <em class="r">Alfa ever built.</em></h2>
-    <div class="rule"></div>
-    <p class="lede">Only <b>10</b> Giulia Quadrifoglio Luna Rossa exist — each engineered to echo the Luna Rossa AC75. Its design language runs through every page of this deck. Five cues, five deck devices.</p>
-    <div class="statrow cols-3" style="grid-template-columns:repeat(5,1fr);gap:16px">
-      <div class="card"><div style="height:64px;border-radius:8px;margin-bottom:14px;background:linear-gradient(115deg,#9aa1a8,#cfd4da 32%,#7e858d 70%,#cfd4da);position:relative;overflow:hidden"><span style="position:absolute;left:0;right:0;top:0;height:42%;background:linear-gradient(180deg,#0d0e10,#1a1c1f);display:block"></span></div>
-        <h3 style="font-size:14px">Iridescent bicolour</h3><p style="font-size:12px">Steel-grey body, black boat-deck top.</p><p style="font-size:11px;color:var(--steel);margin-top:8px">→ Base of every section.</p></div>
-      <div class="card"><div style="height:64px;border-radius:8px;margin-bottom:14px;background:repeating-linear-gradient(45deg,#1c1f24 0 4px,#0d0e10 4px 8px),repeating-linear-gradient(-45deg,rgba(255,255,255,.05) 0 4px,transparent 4px 8px);background-size:8px 8px"></div>
-        <h3 style="font-size:14px">Carbon-fibre aero</h3><p style="font-size:12px">Canards, skirts, underbody profiles.</p><p style="font-size:11px;color:var(--steel);margin-top:8px">→ Panel &amp; divider texture.</p></div>
-      <div class="card"><div style="height:64px;border-radius:8px;margin-bottom:14px;background:linear-gradient(180deg,#15171b,#0d0e10);overflow:hidden"><svg viewBox="0 0 200 64" width="100%" height="100%" preserveAspectRatio="none"><defs><linearGradient id="fg2" x1="0" x2="1"><stop offset="0" stop-color="#C8102E"/><stop offset="1" stop-color="#8A9199"/></linearGradient></defs><path d="M6 44 C70 44,120 16,196 16" fill="none" stroke="url(#fg2)" stroke-width="3"/><path d="M6 52 C70 52,120 26,196 26" fill="none" stroke="rgba(205,210,216,.35)" stroke-width="1.5"/></svg></div>
-        <h3 style="font-size:14px">Foil rear wing</h3><p style="font-size:12px">≈140 kg downforce at 186 mph.</p><p style="font-size:11px;color:var(--steel);margin-top:8px">→ The signature foil line.</p></div>
-      <div class="card"><div style="height:64px;border-radius:8px;margin-bottom:14px;background:linear-gradient(115deg,#9aa1a8,#cfd4da 55%,#8b9299);position:relative;overflow:hidden"><span style="position:absolute;right:8px;top:8px;width:24px;height:24px;border-radius:6px;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:Archivo;font-weight:800;font-size:9px;color:#fff">AR</span><span style="position:absolute;left:-10%;right:-10%;top:56%;height:13px;background:var(--red);transform:rotate(-7deg);display:block"></span></div>
-        <h3 style="font-size:14px">Red livery &amp; badge</h3><p style="font-size:12px">Red bands; red-ground Alfa badge — a brand first.</p><p style="font-size:11px;color:var(--steel);margin-top:8px">→ Red rule, eyebrows, tags.</p></div>
-      <div class="card"><div style="height:64px;border-radius:8px;margin-bottom:14px;background:#0d0e10;display:flex;align-items:center;justify-content:center"><span style="width:48px;height:48px;border-radius:50%;background:conic-gradient(from 220deg,var(--red),#5a1016 35%,#0d0e10 60%,#2a2d33 80%,var(--red));-webkit-mask:radial-gradient(circle 15px at 50% 50%,transparent 98%,#000 100%);mask:radial-gradient(circle 15px at 50% 50%,transparent 98%,#000 100%);display:block"></span></div>
-        <h3 style="font-size:14px">Red→black wheels</h3><p style="font-size:12px">19-inch forged, gradient finish.</p><p style="font-size:11px;color:var(--steel);margin-top:8px">→ Numerals &amp; active markers.</p></div>
-    </div>
-    <div class="reveal" style="margin-top:40px">
+      <div class="reveal" style="margin-top:40px">
       <div class="mini" style="margin-bottom:14px">The car the language comes from</div>
       <div class="videoframe" style="max-width:880px"><iframe src="https://www.youtube.com/embed/I_syz8r07_Q?rel=0&modestbranding=1&controls=0" title="Giulia Quadrifoglio Luna Rossa" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
       <div style="font-size:12.5px;color:var(--txt-dim);margin-top:12px">Giulia Quadrifoglio Luna Rossa — 10 units worldwide · on track at Balocco</div>
     </div>
-  </div>
 </section>
 
 <!-- WATCH THE ACTION -->
