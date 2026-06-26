@@ -113,6 +113,12 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
 </style>
 </head>
 <a href="#package" class="jump-ask" aria-label="Jump to the package and pricing">The Package →</a>
+@media (max-width:820px){
+  .pkg-head{display:none !important}
+  .pkg-row{grid-template-columns:1fr !important;gap:0}
+  .pkg-row > div{padding:14px 18px !important}
+  .pkg-row > div:last-child{text-align:left !important;padding-top:0 !important}
+}
 <style>
 .jump-ask{position:fixed;right:24px;bottom:24px;z-index:300;font-family:Archivo,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:#fff;background:rgba(20,23,27,.82);backdrop-filter:blur(8px);border:1px solid rgba(205,210,216,.22);border-radius:100px;padding:13px 20px;text-decoration:none;transition:all .25s;box-shadow:0 6px 24px rgba(0,0,0,.4)}
 .jump-ask:hover{background:var(--red);border-color:var(--red);transform:translateY(-2px)}
@@ -128,7 +134,7 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
   <div style="position:absolute;inset:0;z-index:1;pointer-events:none;background:repeating-linear-gradient(45deg,rgba(255,255,255,0.012) 0 2px,transparent 2px 6px),linear-gradient(180deg,rgba(8,9,11,0.32) 0%,transparent 26%,rgba(8,9,11,0.55) 62%,rgba(8,9,11,0.97) 100%)"></div>
   <div style="position:absolute;z-index:1;right:2.5%;top:3%;font-family:Antonio;font-weight:200;line-height:.8;font-size:clamp(170px,28vw,400px);color:rgba(205,210,216,0.07);pointer-events:none;user-select:none">2027</div>
   <div style="position:absolute;top:0;left:0;right:0;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:28px 48px">
-<div style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:#fff;display:flex;gap:12px;align-items:center">Red Sea Sails <span style="color:var(--red-bright);font-weight:400;font-size:14px">×</span> <img src="assets/alfa-badge-black.svg" alt="Alfa Romeo" style="height:75px;width:auto ; filter:brightness(0) invert(1)"></div>    <div style="font-family:Archivo;font-weight:600;text-transform:uppercase;letter-spacing:.22em;font-size:9.5px;color:var(--steel-dim);border:1px solid var(--line);border-radius:999px;padding:6px 14px">Tailored Partnership · Confidential</div>
+<div style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:11px;color:#fff;display:flex;gap:12px;align-items:center">Red Sea Sails <span style="color:var(--red-bright);font-weight:400;font-size:14px">×</span> <img src="assets/alfa-badge-red.png" alt="Alfa Romeo" style="height:75px;width:auto"></div>    <div style="font-family:Archivo;font-weight:600;text-transform:uppercase;letter-spacing:.22em;font-size:9.5px;color:var(--steel-dim);border:1px solid var(--line);border-radius:999px;padding:6px 14px">Tailored Partnership · Confidential</div>
   </div>
   <div class="wrap" style="position:relative;z-index:2;padding-bottom:22px">
     <span class="eyebrow"><span style="width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(200,16,46,.18);display:inline-block"></span>The Global Stage</span>
@@ -176,7 +182,7 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
 <!-- THE DECEMBER FLAGSHIP -->
 <section class="section s-carbon" style="padding-top:160px" id="flagship">
   <div class="corner">The Flagship</div>
-  <img src="assets/alfa-badge-black.svg" alt="" aria-hidden="true" style="position:absolute;right:-90px;top:50%;transform:translateY(-50%);width:min(46%,560px);height:auto;z-index:0;opacity:.05;filter:brightness(0) invert(1);pointer-events:none">
+  <img src="assets/alfa-badge-red.png" alt="" aria-hidden="true" style="position:absolute;right:-90px;top:50%;transform:translateY(-50%);width:min(46%,560px);height:auto;z-index:0;opacity:.05;filter:brightness(0) invert(1);pointer-events:none">
   <div class="wrap h-content reveal">
     <span class="eyebrow">The December Flagship</span>
     <h2 class="h-display">Four days. The pinnacle<br>of the <em class="r">Red Sea calendar.</em></h2>
@@ -231,6 +237,8 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
     <div style="margin-top:34px;padding:24px 28px;border-left:3px solid var(--red);background:rgba(200,16,46,.06);border-radius:12px">
       <p style="font-family:Archivo;font-weight:300;font-size:17px;color:var(--steel)">In 2025 Egypt opened its waters to foreign-flagged leisure yachts for the first time. <b style="font-weight:700;color:#fff">The door is open — and the Red Sea is the natural winter alternative when the Med closes in October.</b></p>
     </div>
+        <div style="margin-top:34px;padding:24px 28px;border-left:3px solid var();background:rgba(200,16,46,.06);border-radius:12px">
+    <div class="videoframe"><video src="assets/rssr25.mp4" controls muted playsinline></video></div> 
   </div>
 </section>
 
@@ -361,14 +369,14 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
       </div>
     </div>
     <div class="reveal" style="margin-top:40px">
-      <div class="videoframe" style="max-width:880px;margin:0 auto"><iframe src="https://www.youtube.com/embed/fRlIOll0DTI?rel=0&modestbranding=1&controls=0" title="Alfa Romeo × Luna Rossa" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div class="videoframe"><video src="assets/luna-rossa-passion.mp4" controls muted playsinline></video></div>      
       <div class="cap">Alfa Romeo × Luna Rossa</div>
     </div>
   </div>
       <div class="reveal" style="margin-top:40px;text-align:center">
       <div class="mini" style="margin-bottom:14px">The car the language comes from</div>
-      <div class="videoframe" style="max-width:880px;margin:0 auto"><iframe src="https://www.youtube.com/embed/I_syz8r07_Q?rel=0&modestbranding=1&controls=0" title="Giulia Quadrifoglio Luna Rossa" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
-      <div style="font-size:12.5px;color:var(--txt-dim);margin-top:12px">Giulia Quadrifoglio Luna Rossa — 10 units worldwide · on track at Balocco</div>
+<div class="videoframe"><video src="assets/balocco.mp4" controls muted playsinline></video></div>      
+<div style="font-size:12.5px;color:var(--txt-dim);margin-top:12px">Giulia Quadrifoglio Luna Rossa — 10 units worldwide · on track at Balocco</div>
     </div>
 </section>
 
@@ -382,7 +390,7 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
     <p class="lede">Alfa Romeo's own reels already capture it: the car, the yachts, the sailors, the fans. This is the world the December flagship plugs straight into.</p>
     <div class="statrow cols-3" style="margin-top:34px;align-items:start">
       <div>
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTSNOjQCOjE/" data-instgrm-version="14" style="margin:0;width:100%;min-width:0;max-width:100%;border:0"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DLaYJRVNDUW" data-instgrm-version="14" style="margin:0;width:100%;min-width:0;max-width:100%;border:0"></blockquote>
         <div class="cap">Alfa Romeo × Luna Rossa · official trailer</div>
       </div>
       <div>
@@ -394,6 +402,8 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
         <div class="cap">On the water · the fans</div>
       </div>
     </div>
+    <div class="statrow cols-3" style="margin-top:34px;align-items:start"></div>
+    <div class="videoframe"><video src="assets/luna-rossa-trailer.mp4" controls muted playsinline></video></div>      
   </div>
 </section>
 
@@ -407,42 +417,42 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
     <p class="lede">A full, curated menu — branding, print, on-site, digital and vehicle. Examples we tailor to Alfa Romeo; swap in your own assets as we develop the plan.</p>
     <div class="statrow cols-3">
   <div>
-    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-hullwrap.jpg" alt="" onerror="this.remove()"></div>
+    <div class="imgtile" style="aspect-ratio:4:5;margin-bottom:14px"><img src="assets/act-hullwrap.jpg" alt="" onerror="this.remove()"></div>
     <h3 style="font-size:17px">Hull &amp; sail wrap</h3>
-    <p>Your livery on a competing race yacht — the hero activation, on the water for four days.</p>
+    <p>The hull and mainsail are the most photographed assets of a regatta. It delivers the high-end, premium dynamic imagery, beyond the event, needed to match the global AlfaLuna Rossa America's Cup campaign.</p>
   </div>
   <div>
-    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-vehicle.jpg" alt="" onerror="this.remove()"></div>
+    <div class="imgtile" style="aspect-ratio:4:5;margin-bottom:14px"><img src="assets/act-vehicle.jpg" alt="" onerror="this.remove()"></div>
     <h3 style="font-size:17px">Vehicle display zone</h3>
     <p>Premium showcase in the Regatta Village for your latest models, front and centre.</p>
   </div>
   <div>
-    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-testdrive.jpg" alt="" onerror="this.remove()"></div>
+    <div class="imgtile" style="aspect-ratio:4:5;margin-bottom:14px"><img src="assets/act-testdrive.jpg" alt="" onerror="this.remove()"></div>
     <h3 style="font-size:17px">Test-drive experience</h3>
     <p>Owners and VIP guests behind the wheel — a premium audience driving the car at the event.</p>
   </div>
   <div>
-    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-vipfleet.jpg" alt="" onerror="this.remove()"></div>
+    <div class="imgtile" style="aspect-ratio:4:5;margin-bottom:14px"><img src="assets/act-vipfleet.jpg" alt="" onerror="this.remove()"></div>
     <h3 style="font-size:17px">VIP transfer fleet</h3>
     <p>Branded vehicles moving guests between marina, gala and resort — rolling visibility all weekend.</p>
   </div>
   <div>
-    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-spectator.jpg" alt="" onerror="this.remove()"></div>
+    <div class="imgtile" style="aspect-ratio:4:5;margin-bottom:14px"><img src="assets/act-spectator.jpg" alt="" onerror="this.remove()"></div>
     <h3 style="font-size:17px">VIP spectator yacht</h3>
     <p>An Alfa Romeo–branded spectator yacht for up to 12 VIPs, on the water at the heart of the racing.</p>
   </div>
   <div>
-    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-lounge.jpg" alt="" onerror="this.remove()"></div>
+    <div class="imgtile" style="aspect-ratio:4:5;margin-bottom:14px"><img src="assets/act-lounge.jpg" alt="" onerror="this.remove()"></div>
     <h3 style="font-size:17px">Branded lounge &amp; booth</h3>
     <p>A hospitality space carrying the brand through the gala and the forum.</p>
   </div>
   <div>
-    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-print.jpg" alt="" onerror="this.remove()"></div>
+    <div class="imgtile" style="aspect-ratio:4:5;margin-bottom:14px"><img src="assets/act-print.jpg" alt="" onerror="this.remove()"></div>
     <h3 style="font-size:17px">Print &amp; on-site branding</h3>
     <p>Refined placement across signage, programme and the El Gouna waterfront.</p>
   </div>
   <div>
-    <div class="imgtile" style="aspect-ratio:16/9;margin-bottom:14px"><img src="assets/act-cobrand.jpg" alt="" onerror="this.remove()"></div>
+    <div class="imgtile" style="aspect-ratio:4:5;margin-bottom:14px"><img src="assets/act-cobrand.jpg" alt="" onerror="this.remove()"></div>
     <h3 style="font-size:17px">Co-branded content</h3>
     <p>Parallel stories of performance — captured across the regatta and built for your channels.</p>
   </div>
@@ -458,11 +468,11 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
     <div class="rule"></div>
     <p class="lede">Red Sea Sails runs a complete yachting ecosystem at El Gouna — events, school, charter, and an international network.</p>
     <div class="statrow cols-3">
-      <div class="card"><div class="kn">Yachts</div><h3>Felix Maritime</h3><p>Co-managed luxury sailing yachts — premium on-water experiences.</p></div>
+      <div class="card"><div class="kn">Yachts</div><h3>Felix Maritime</h3><p>Co-managed luxury yachts servicing — premium on-water experiences.</p></div>
       <div class="card"><div class="kn">Mediterranean</div><h3>FX Yachting · Greece</h3><p>European HNW charter pipeline feeding the Red Sea winter season.</p></div>
-      <div class="card"><div class="kn">Brands</div><h3>Hanse dealership</h3><p>Exclusive Hanse dealership plus Fountaine Pajot, Lagoon &amp; X-Yachts.</p></div>
-      <div class="card"><div class="kn">Gateway</div><h3>Sailing school</h3><p>IYT-style training — residents, guests and youth, year-round.</p></div>
-      <div class="card"><div class="kn">Fleet</div><h3>Charter operations</h3><p>Day and multi-day charter for resort guests and visiting owners.</p></div>
+      <div class="card"><div class="kn">Brands</div><h3>Hanse dealership</h3><p>Exclusive Hanse dealership plus affiliation with Fountaine Pajot, Lagoon &amp; X-Yachts.</p></div>
+      <div class="card"><div class="kn">Gateway</div><h3>Sailing school</h3><p>IYT accreditation, offered to residents, guests and youth.</p></div>
+      <div class="card"><div class="kn">Fleet</div><h3>Charter operations</h3><p>Day and over-night charter for locals, tourists and visiting owners.</p></div>
       <div class="card"><div class="ph" style="height:100%"><span><b>[ The signing ]</b>confirm what to feature &amp; if shareable</span></div></div>
     </div>
   </div>
@@ -486,37 +496,40 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
 
 <!-- CUSTOM PACKAGE -->
 <section class="section s-steel" id="package">
-  <div class="corner ondeck">Your Package</div>
-  <div class="wrap h-content reveal">
-    <span class="eyebrow">Your Custom December Package</span>
-    <h2 class="h-section">Built like a Quadrifoglio. <em class="r">Configured to you.</em></h2>
-    <p class="lede" style="max-width:640px">A Gold December base, then add the activations that matter most. Builds from <b style="color:#0e1114">EGP 1.5M</b> to a fully-loaded <b style="color:#0e1114">~EGP 3M.</b></p>
-    <div style="display:grid;grid-template-columns:1fr;gap:0;margin-top:36px;border:1px solid rgba(14,17,20,.16);border-radius:14px;overflow:hidden;background:rgba(255,255,255,.45)">
-      <div style="display:grid;grid-template-columns:1.6fr 1fr auto;gap:0;padding:18px 24px;background:#14171b;color:#fff">
-        <div style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:11px">Configuration</div>
-        <div style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:11px">What it adds</div>
-        <div style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:11px;text-align:right">Investment</div>
-      </div>
-      <div style="display:grid;grid-template-columns:1.6fr 1fr auto;gap:0;padding:20px 24px;border-bottom:1px solid rgba(14,17,20,.1);background:rgba(200,16,46,.06)">
-        <div><div style="font-family:Archivo;font-weight:700;font-size:15px;color:#0e1114">Gold December Partner — Base</div><div style="font-size:12.5px;color:#3a4046;margin-top:3px">Core branding, on-site activation, hospitality access</div></div>
-        <div style="font-size:13px;color:#3a4046;align-self:center">Logo, village presence, programme, social</div>
-        <div style="text-align:right;align-self:center"><span class="num" style="font-size:30px;color:#a30d24">1.5M</span><div style="font-size:10px;color:#3a4046">EGP · starting</div></div>
-      </div>
-      <div style="display:grid;grid-template-columns:1.6fr 1fr auto;gap:0;padding:18px 24px;border-bottom:1px solid rgba(14,17,20,.1)"><div style="font-family:Archivo;font-weight:600;font-size:14px;color:#0e1114">+ Hull wrap</div><div style="font-size:12.5px;color:#3a4046;align-self:center">Your livery on a competing race yacht</div><div style="text-align:right;align-self:center;font-family:Archivo;font-weight:700;color:#0e1114">EGP [TBC]</div></div>
-      <div style="display:grid;grid-template-columns:1.6fr 1fr auto;gap:0;padding:18px 24px;border-bottom:1px solid rgba(14,17,20,.1)"><div style="font-family:Archivo;font-weight:600;font-size:14px;color:#0e1114">+ Hull + mainsail</div><div style="font-size:12.5px;color:#3a4046;align-self:center">Full livery — hull and sail, maximum visibility</div><div style="text-align:right;align-self:center;font-family:Archivo;font-weight:700;color:#0e1114">EGP [TBC]</div></div>
-      <div style="display:grid;grid-template-columns:1.6fr 1fr auto;gap:0;padding:18px 24px;border-bottom:1px solid rgba(14,17,20,.1)"><div style="font-family:Archivo;font-weight:600;font-size:14px;color:#0e1114">+ Vehicle display · 1 week</div><div style="font-size:12.5px;color:#3a4046;align-self:center">Models showcased in the Regatta Village</div><div style="text-align:right;align-self:center;font-family:Archivo;font-weight:700;color:#0e1114">EGP [TBC]</div></div>
-      <div style="display:grid;grid-template-columns:1.6fr 1fr auto;gap:0;padding:18px 24px;border-bottom:1px solid rgba(14,17,20,.1)"><div style="font-family:Archivo;font-weight:600;font-size:14px;color:#0e1114">+ Vehicle display · 2 weeks</div><div style="font-size:12.5px;color:#3a4046;align-self:center">Extended showcase window across the build-up</div><div style="text-align:right;align-self:center;font-family:Archivo;font-weight:700;color:#0e1114">EGP [TBC]</div></div>
-      <div style="display:grid;grid-template-columns:1.6fr 1fr auto;gap:0;padding:20px 24px;background:#14171b;color:#fff">
-        <div style="font-family:Archivo;font-weight:700;font-size:15px">Fully loaded — Headline configuration</div>
-        <div style="font-size:12.5px;color:rgba(255,255,255,.65);align-self:center">Every activation, maximum presence</div>
-        <div style="text-align:right;align-self:center"><span class="num grad-r" style="font-size:32px">~3M</span><div style="font-size:10px;color:rgba(255,255,255,.6)">EGP</div></div>
-      </div>
-    </div>
-    <p style="font-size:12px;color:#3a4046;margin-top:14px">Indicative ranges for discussion. Final line-item pricing confirmed in the partnership proposal.</p>
+      <div class="wrap h-content reveal">
+    <img src="assets/alfa-badge-red.png" alt="Alfa Romeo" style="position:absolute;right:-90px;top:50%;transform:translateY(-50%);width:min(46%,560px);height:auto;z-index:0;opacity:.05;pointer-events:none">
+    <img src="assets/alfa-badge-red.png" alt="Alfa Romeo" style="height:75px;width:auto"></div> 
+  <div class="pkg-table" style="margin-top:34px;border-radius:16px;overflow:hidden;border:1px solid rgba(14,17,20,.12)">
+  <div class="pkg-head" style="display:grid;grid-template-columns:1fr 1.4fr 1.4fr 0.8fr;background:#0e1114;color:#fff;font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:11px">
+    <div style="padding:18px 20px">Configuration</div>
+    <div style="padding:18px 20px">Included Activations</div>
+    <div style="padding:18px 20px">Strategic ROI for Alfa Romeo</div>
+    <div style="padding:18px 20px;text-align:right">Investment</div>
   </div>
-  <a href="#activation" style="display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-family:Archivo,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--red);text-decoration:none">↑ See the full activation menu</a>
-</section>
 
+  <div class="pkg-row" style="display:grid;grid-template-columns:1fr 1.4fr 1.4fr 0.8fr;background:linear-gradient(90deg,rgba(200,16,46,.06),transparent);border-bottom:1px solid rgba(14,17,20,.08)">
+    <div style="padding:22px 20px"><b style="font-size:16px;color:#0e1114">Gold December Base</b><div style="font-size:12px;color:#5a5f66;margin-top:3px">The Foundation</div></div>
+    <div style="padding:22px 20px;font-size:13.5px;color:#14171b;line-height:1.7">Premium Race Village booth space · Core event backdrop &amp; platform branding · VIP hospitality &amp; opening ceremony access</div>
+    <div style="padding:22px 20px;font-size:13.5px;color:#14171b;line-height:1.7"><b>Brand Presence:</b> Anchors Alfa Romeo as an official luxury lifestyle partner within the coastal community.</div>
+    <div style="padding:22px 20px;text-align:right"><span style="font-family:Archivo;font-weight:700;font-size:22px;color:var(--red)">1.5M+</span><div style="font-size:11px;color:#5a5f66">EGP · starting</div></div>
+  </div>
+
+  <div class="pkg-row" style="display:grid;grid-template-columns:1fr 1.4fr 1.4fr 0.8fr;border-bottom:1px solid rgba(14,17,20,.08)">
+    <div style="padding:22px 20px"><b style="font-size:16px;color:#0e1114">The "Luna Rossa" Livery</b><div style="font-size:12px;color:#5a5f66;margin-top:3px">Sailing Upgrade</div></div>
+    <div style="padding:22px 20px;font-size:13.5px;color:#14171b;line-height:1.7"><b>Exclusive Fleet Takeover</b> — full branding of hull &amp; mainsail of luxury RSS racing yacht · Full commercial rights to dynamic photo/video content on the water.</div>
+    <div style="padding:22px 20px;font-size:13.5px;color:#14171b;line-height:1.7"><b>The Global Hook:</b> Directly mirrors Alfa Romeo's global America's Cup campaign. Transforms local Egyptian waters into a live global marketing hub.</div>
+    <div style="padding:22px 20px;text-align:right"><span style="font-family:Archivo;font-weight:700;font-size:22px;color:#0e1114">3M</span><div style="font-size:11px;color:#5a5f66">EGP · incl. base</div></div>
+  </div>
+
+  <div class="pkg-row" style="display:grid;grid-template-columns:1fr 1.4fr 1.4fr 0.8fr;background:#0e1114;color:#fff">
+    <div style="padding:22px 20px"><b style="font-size:16px;color:#fff">Extended Showcase</b><div style="font-size:12px;color:#9aa0a6;margin-top:3px">The Ultimate Retail Upgrade</div></div>
+    <div style="padding:22px 20px;font-size:13.5px;color:#d4d7da;line-height:1.7"><b style="color:#fff">2-Week Marina Display</b> — vehicle placement across the highest-traffic marina walkway, build week + race week · First-party high-net-worth buyer lead generation.</div>
+    <div style="padding:22px 20px;font-size:13.5px;color:#d4d7da;line-height:1.7"><b style="color:#fff">Dealer Conversion:</b> Moves activation from awareness to direct sales. Two weeks maximizes test-drives and dealer-network ROI during peak coastal traffic.</div>
+    <div style="padding:22px 20px;text-align:right"><span style="font-family:Archivo;font-weight:700;font-size:22px;color:var(--red-bright,#ff2d3f)">4M</span><div style="font-size:11px;color:#9aa0a6">EGP · fully loaded</div></div>
+  </div>
+</div>
+<p style="margin-top:16px;font-size:12px;color:#5a5f66">Indicative ranges for discussion. Final line-item pricing confirmed in the partnership proposal.</p>
+</section>
 <section class="section s-dark" id="ladder">
   <div class="corner">The Trajectory</div>
   <div class="wrap h-content reveal">
@@ -538,9 +551,9 @@ em.r{font-style:normal;font-weight:300;color:transparent;-webkit-background-clip
   <div class="wrap h-content reveal">
     <span class="eyebrow">The Invitation</span>
     <h2 class="h-section">One automotive partner. <em class="r">One window.</em></h2>
-The path is simple: <b>written agreement in July 2026</b> — so August is clear for preparation while the region is on holiday — with <b>September</b> for finance transfer and final details. That keeps livery production and brand approvals comfortably ahead of 9 December.    <p style="margin-top:20px;font-family:Archivo;font-weight:700;font-size:18px;color:#0e1114">From EGP 1.5M (Gold) to ~EGP 3M fully loaded — hull, fleet, vehicle display, year-round content rights.</p>
+The path is simple: <b>written agreement in July 2026</b> — so August is clear for preparation while the region is on holiday — with <b>September</b> for finance transfer and final details. That keeps livery production and brand approvals comfortably ahead of 9 December.    <p style="margin-top:20px;font-family:Archivo;font-weight:700;font-size:18px;color:#0e1114">From EGP 1.5M (Gold) to ~EGP 4M fully loaded — hull, fleet, vehicle display, year-round content rights.</p>
     <div style="margin-top:28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
-      <img src="assets/alfa-badge-black.svg" alt="Alfa Romeo" style="height:54px;width:auto">
+      <img src="assets/alfa-badge-red.png" alt="Alfa Romeo" style="height:54px;width:auto">
       <p style="font-family:Archivo;font-weight:300;font-size:20px;color:#14171b;max-width:620px;line-height:1.4">We're bringing this to Alfa Romeo first, because the story is already yours. <b style="font-weight:700">The only question is whether you own it before someone else does.</b></p>
     </div>
   </div>
@@ -560,7 +573,7 @@ The path is simple: <b>written agreement in July 2026</b> — so August is clear
     </div>
     <div style="margin-top:40px;display:flex;gap:48px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--line)">
       <div><div style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--red-bright);margin-bottom:8px">Email</div><div style="color:var(--steel)">mo@redseasails.com</div><div style="color:var(--steel)">sailingregatta@redseasails.com</div></div>
-      <div><div style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--red-bright);margin-bottom:8px">Phone</div><div style="color:var(--steel)">+20 120 6560 777</div></div>
+      <div><div style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--red-bright);margin-bottom:8px">Phone</div><div style="color:var(--steel)">+20 120 6560 777</div><div style="color:var(--steel)">+20 127 0247 137</div></div>
       <div><div style="font-family:Archivo;font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--red-bright);margin-bottom:8px">Web</div><div style="color:var(--steel)">www.redseasails.com</div><div style="color:var(--steel)">www.redsearegatta.com</div></div>
     </div>
   </div>
